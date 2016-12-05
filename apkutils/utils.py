@@ -36,7 +36,7 @@ def check_replace(channel):
 	pattern = r'(<meta-data\s+android:name="{channel_attr_name}"\s+android:value=")(\S+)("\s+/>)'.format(channel_attr_name='channel')
 	replacement = r"\g<1>{channel}\g<3>".format(channel=channel)
 	print replacement
-	content = '''<meta-data android:name="channel" android:value="meituan" />'''
+	content = '''<meta-data android:name="channel" android:value="app_name" />'''
 	content = re.sub(pattern, replacement, content)
 	print content
 
