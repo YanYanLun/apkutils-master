@@ -12,7 +12,7 @@ import apkfile
 
 BUILD_DIR = os.path.expanduser(config.get('build', 'build_dir'))
 OUT_DIR = os.path.expanduser(config.get('build', 'out_dir'))
-META_CHANNEL_FILE_NAME_TEMPLATE = "META-INF/mtchannel_{channel}"
+META_CHANNEL_FILE_NAME_TEMPLATE = "META-INF/channel_{channel}"
 
 
 def make(src_apk_path, channel_list):
