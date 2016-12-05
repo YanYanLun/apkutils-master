@@ -12,8 +12,8 @@ import java.util.zip.ZipFile;
  * Created by ponyets on 14-7-30.
  */
 public final class ChannelReader {
-    public static final String KEY_CHANNEL = "mtchannel";
-    public static final String KEY_SUB_CHANNEL = "mtsubchannel";
+    public static final String KEY_CHANNEL = "channel";
+    public static final String KEY_SUB_CHANNEL = "subchannel";
 
     private ChannelReader() {
     }
