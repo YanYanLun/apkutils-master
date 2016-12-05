@@ -18,7 +18,7 @@ META_CHANNEL_FILE_NAME_TEMPLATE = "META-INF/mtchannel_{channel}"
 def make(src_apk_path, channel_list):
 	tmp_src_apk_path = os.path.join(BUILD_DIR, 'temp.apk')
 	shutil.copy(src_apk_path, tmp_src_apk_path)
-	channel_files = apkfile.find_channel_files(tmp_src_apk_path, 'META-INF/mtchannel_')
+	channel_files = apkfile.find_channel_files(tmp_src_apk_path, 'META-INF/channel_')
 	apkfile.remove_channel_files(tmp_src_apk_path, channel_files)
 
 	if not os.path.exists(OUT_DIR):
